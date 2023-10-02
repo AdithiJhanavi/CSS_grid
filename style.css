@@ -1,18 +1,26 @@
 .column {
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
-  .column img {
+/* Use the CSS Grid layout to create a grid container */
+display: grid;
+/* Define the grid layout with 3 equal-width columns and 3 equal-height rows */
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 4px;
+padding: 4px;
+}
+
+/* Apply styles to images within the .column class */
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     height:200px;
     width: 400px;
     justify-content: space-between;
     align-items: center;
-  }
-  h1{
+}
+
+/* Apply styles to all h1 elements */
+h1{
     text-align: center;
     font-size: xx-large;
     margin-right: 200px;
-  }
+}
